@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btnOrder {
+  clip-path: polygon(0% 0%, 94% 0%, 100% 50%, 94% 100%, 0% 100%, 0% 45.3%);
+}
+
+.ModalOrder {
+  filter: blur(5);
+  clip-path: polygon(0% 0%, 96.9% 0%, 100% 50%, 97% 100%, 0% 100%, 0% 43%);
+}
+
+.min-height {
+  min-height: 600px;
+  margin: 20px 0 70px;
+  padding-bottom: 20px;
+  /* background: green; */
+}
+
+.cardOrder {
+  min-height: 600px;
+}
+
+/* ******************************************************** */
+
+
+/* Important switch stuff */
+input[type="checkbox"].switch + label {
+  width: 34px;
+  height: 14px;
+  background: lightgray;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+}
+input[type="checkbox"].switch + label:before,
+input[type="checkbox"].switch + label:after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  transition: all 0.2s;
+}
+
+
+input[type="checkbox"].switch:checked + label {
+  background:#009645 ;
+}
+input[type="checkbox"].switch:checked + label:before,
+input[type="checkbox"].switch:checked + label:after {
+  left: 14px;
+  background: #fff;
+}
+/*  */
